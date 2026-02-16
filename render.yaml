@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: truecaller-bot
+    runtime: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: API_KEY
+        sync: false
